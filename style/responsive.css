@@ -2,10 +2,11 @@
     header .container{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
 
-    header nav{
-        padding: 10px;
+    header nav a:last-child{
+        margin: 0;
     }
 
     .main-game{
@@ -19,12 +20,25 @@
     }
 
     .buttons{
+        width: 100vw;
         display: flex;
         margin-top: 20px;
     }
 
+    .button{
+        width: 40%;
+    }
+
+    .carousel-title{
+        text-align: center;
+    }
+
     .carousel-item{
-        height: 100vh;
+        height: 94vh;
+    }
+
+    .item-label{
+        font-size: 30px;
     }
 
 }
