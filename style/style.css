@@ -13,14 +13,17 @@
 
 body{
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
     color: white;
+    position: relative;
 }
 
 header .container{
     display: flex;    
     align-items: center;
     justify-content: space-between;
+    background-color: #191919;
+    padding: 5px;
 }
 
 header .logo{
@@ -33,7 +36,6 @@ header nav a{
     text-decoration: none;
     color: #aaa;
     margin-right: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
 }
 
 header nav a:hover{
@@ -66,7 +68,7 @@ header nav a:hover{
 .main-game .title{
     font-size: 40px;
     margin-top: 15%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .main-game .description{
@@ -102,11 +104,43 @@ header nav a:hover{
 
 .carousel-title{
     margin-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.item{
+    position: relative;
 }
 
 .carousel-item{
     height: 400px;
     width: 100px;
     display: block;
+}
+
+.item-label{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.plataform-icon{
+    padding: 5px 10px;
+}
+
+.price{
+    padding: 5px 10px;
+}
+
+.discount{
+    padding: 5px 10px;
+    background: lime;
+    color: black;
+    font-weight: bold;
+}
+
+.footer{
+    padding: 20px;
+    background: #191919;
+    text-align: center;
 }
